@@ -82,6 +82,22 @@ download_link(
 <br>
 <h4>Descarga los datos en formato csv:</h4>
 
+Límite Municipal:
+
+
+```{r }
+
+
+rio::import("output/excel/viacha/limite_mun.xlsx") %>%
+  download_this(
+    output_name = "distritos",
+    output_extension = ".csv",
+    button_label = "Descargar datos como CSV",
+    button_type = "primary",
+    has_icon = TRUE,
+    icon = "fa fa-save"
+  )
+```
 
 Distritos:
 
